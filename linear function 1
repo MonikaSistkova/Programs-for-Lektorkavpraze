@@ -1,0 +1,9 @@
+import numpy as np
+x1=int(input("Zadejte první souřadnici bodu A"))
+y1=int(input("Zadejte druhou souřadnici bodu A"))
+x2=int(input("Zadejte první souřadnici bodu B"))
+y2=int(input("Zadejte druhou souradnici bodu B"))
+A = np.array([ [x1,1], [x2,1] ])
+b = np.array([y1,y2])
+z = np.linalg.solve(A,b)
+print(z)
