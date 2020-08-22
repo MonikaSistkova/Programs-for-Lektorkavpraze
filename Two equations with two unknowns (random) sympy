@@ -1,18 +1,15 @@
 import random
-... from sympy import symbols, Eq, solve
-... x, y = symbols('x y')
-... a = random.randint(2,10)
-... b = random.randint(2,10)
-... c = random.randint(2,10)
-... d = random.randint(2,10)
-... e = random.randint(2,10)
-... f = random.randint(2,10)
-... print('{}x + {}y = {}'.format(a,b,c))
-... print('{}x - {}y = {}'.format(d,e,f))
-... eq1 = Eq(a*x + b*y - c)
-... eq2 = Eq(d*x - e*y - f)
-... sol = solve((eq1, eq2),(x, y))
-... print(sol)
-6x + 6y = 6
-4x - 5y = 6
-{x: 11/9, y: -2/9}
+from sympy import symbols, Eq, solve
+x, y = symbols('x y')
+a = random.randint(2,10)
+b = random.randint(2,10)
+c = random.randint(2,10)
+d = random.randint(2,10)
+e = random.randint(2,10)
+f = random.randint(2,10)
+print('{}x + {}y = {}'.format(a,b,c))
+print('{}x - {}y = {}'.format(d,e,f))
+eq1 = Eq(a*x + b*y - c)
+eq2 = Eq(d*x - e*y - f)
+sol = solve((eq1, eq2),(x, y))
+print(sol)
