@@ -1,0 +1,14 @@
+import random
+import numpy as np
+a = random.randint(2,10)
+b = random.randint(2,10)
+c = random.randint(2,10)
+d = random.randint(2,10)
+e = random.randint(2,10)
+f = random.randint(2,10)
+print('{}x + {}y = {}'.format(a,b,c))
+print('{}x - {}y = {}'.format(d,e,f))
+A = np.array([ [a,b], [d,e] ])
+b = np.array([c,f])
+z = np.linalg.solve(A,b)
+print(z)
