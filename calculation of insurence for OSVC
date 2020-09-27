@@ -1,0 +1,9 @@
+x=int(input("Zadejte hrubý ročník příjem za rok 2020: "))
+net = x*0.4
+if net <= 83603:
+  soc = 0
+else:
+  soc = net/12*0.292*0.5
+print("Měsíční zálohy na sociální pojistné jsou:" ,soc,"Kč") 
+zdrav = net/12*0.292*0.5*0.135
+print("Měsíční zálohy na zdravotní pojistné jsou:" ,zdrav,"Kč")
