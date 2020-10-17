@@ -11,9 +11,11 @@ sin_beta = math.sin(pi/180*beta)
 sin_gama = math.sin(pi/180*gama)
 a = c/sin_gama *sin_alfa
 b = c/sin_gama *sin_beta
-v = a * sin_beta
-x = math.sqrt(a*a - v*v)
+vc = a * sin_beta
+x = math.sqrt(a*a - vc*vc)
 y = c - x
+tc = math.sqrt((2*a*a+2*b*b-c*c)/4)
+print(tc)
 board = turtle.Turtle()
 board.forward(100) # draw base
 board.left(180-beta)
@@ -22,8 +24,13 @@ board.left(180-gama)
 board.forward(b*10)
 board.left(180-alfa)
 board.forward(y*10)
-board.color("red")
 board.left(90)
-board.forward(v*10)
+board.pencolor("red")
+board.forward(vc*10)
+board.right(180)
+board.forward(vc*10)
+board.pencolor("black")
+board.right(90)
+board.forward(y*10)
 turtle.done()
 print("Výška na základnu je zvýrazněna červeně.")
