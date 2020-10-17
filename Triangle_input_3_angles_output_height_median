@@ -18,7 +18,6 @@ tc = math.sqrt((2*a*a+2*b*b-c*c)/4)
 sin_x = a*(sin_beta)/tc
 rad = math.asin(sin_x)
 deg = rad*180/pi
-print(deg)
 board = turtle.Turtle()
 board.forward(100) # draw base
 board.left(180-beta)
