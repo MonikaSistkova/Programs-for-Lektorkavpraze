@@ -5,7 +5,7 @@ alfa=int(input("Zadejte úhel alfa ve stupních "))
 beta=int(input("Zadejte úhel beta ve stupních "))
 gama=180-(alfa+beta)
 print("Úhel gama má velikost",gama,"stupňu.")
-c = 10
+c = 20
 sin_alfa = math.sin(pi/180*alfa)
 sin_beta = math.sin(pi/180*beta)
 sin_gama = math.sin(pi/180*gama)
