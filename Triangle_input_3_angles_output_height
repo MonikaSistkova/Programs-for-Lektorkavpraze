@@ -5,7 +5,7 @@ alfa=int(input("Zadejte úhel alfa ve stupních "))
 beta=int(input("Zadejte úhel beta ve stupních "))
 gama=180-(alfa+beta)
 print("Úhel gama má velikost",gama,"stupňu.")
-c = 20
+c = 10
 sin_alfa = math.sin(pi/180*alfa)
 sin_beta = math.sin(pi/180*beta)
 sin_gama = math.sin(pi/180*gama)
@@ -15,7 +15,6 @@ vc = a * sin_beta
 x = math.sqrt(a*a - vc*vc)
 y = c - x
 tc = math.sqrt((2*a*a+2*b*b-c*c)/4)
-print(tc)
 board = turtle.Turtle()
 board.forward(100) # draw base
 board.left(180-beta)
@@ -32,5 +31,8 @@ board.forward(vc*10)
 board.pencolor("black")
 board.right(90)
 board.forward(y*10)
+board.right(180)
+board.forward(c/2*10)
+board.pencolor("blue")
 turtle.done()
 print("Výška na základnu je zvýrazněna červeně.")
