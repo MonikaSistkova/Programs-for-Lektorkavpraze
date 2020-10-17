@@ -1,0 +1,33 @@
+import turtle
+import math
+from math import pi
+alfa=int(input("Zadejte úhel alfa "))
+beta=int(input("Zadejte úhel beta "))
+game=int(input("Zadejte úhel gama "))
+c = 10
+alfa = 100
+beta = 50
+gama = 30
+sin_alfa = math.sin(pi/180*alfa)
+sin_beta = math.sin(pi/180*beta)
+sin_gama = math.sin(pi/180*gama)
+print(sin_alfa)
+print(sin_beta)
+print(sin_gama)
+a = c/sin_gama *sin_alfa
+b = c/sin_gama *sin_beta
+print(b,c)
+v = a * sin_beta
+x = math.sqrt(a*a - v*v)
+y = c - x
+board = turtle.Turtle()
+board.forward(100) # draw base
+board.left(180-beta)
+board.forward(a*10)
+board.left(180-gama)
+board.forward(b*10)
+board.left(180-alfa)
+board.forward(y*10)
+board.left(90)
+board.forward(v*10)
+turtle.done()
