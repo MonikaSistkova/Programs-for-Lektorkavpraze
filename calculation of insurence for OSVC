@@ -19,7 +19,7 @@ else:
 zdrav = net/12*0.5*0.135
 zdravr = round(zdrav)
 if zdravr > zdrav:
-  zdtavx = zdravr
+  zdravx = zdravr
   print("Měsíční zálohy na zdravotní pojistné jsou:" ,zdravr,"Kč")
 else: 
   zdravx = zdravr+ 1
