@@ -1,4 +1,4 @@
-x=int(input("Zadejte hrubý ročník příjem za rok 2020: "))
+x=int(input("Zadejte hrubý ročník příjem za rok: "))
 net = x*0.4
 print("Čistý příjem při použití paušálu ve výši 60%: ",net,"Kč")
 if net <= 83603:
