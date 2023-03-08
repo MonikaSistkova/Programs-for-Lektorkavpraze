@@ -1,0 +1,15 @@
+import math
+radius = round(float(input("Zadejte poloměr podstavy(r) v centimetrech: ")))
+height = round(float(input("Zadejte výšku válce(v) v centimetrech: ")))
+# calculate area of circular base
+base_area = math.pi * (radius**2)
+# calculate area of surface
+surface_area = 2 * math.pi * radius * height
+# calculate total area
+total_area = surface_area + 2 * base_area
+# detailed calculations
+print(f"\nPostup výpočtu:\nObsah (Sp) postavy se spočítá pomocí vzorečku π·r²= π·{radius:d}² = {round(base_area):d} cm²")
+print(f"\nObsah pláště (Spl) se spočítá jako obvod podstavy(kruhu) krát výška,
+\ntedy pomocí vzorečku 2·π·r·v = {radius:d} · {height:d} = {round(surface_area):d} cm²")
+print(f"\nObsah celého válce dostaneme, pokud sečteme obsah podstavy (Sp) a obsah pláště (Spl),
+\ntedy 2 · {round(base_area):d} + {round(surface_area):d} = {round(total_area):d} cm²")
